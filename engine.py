@@ -42,6 +42,9 @@ class Value:
 
         return out
     
+    def __radd__(self, other): # other + self
+        return self + other
+    
     def __rmul__(self, other): # other * self
         return self * other
 
